@@ -69,14 +69,13 @@ ul li.menu-item svg {
     fill: #ADADAD;
 }
 
-ul li.menu-item svg:hover,
-ul li.menu-item svg:active {
+ul li.menu-item:hover svg,
+ul li.menu-item:active svg {
     fill: #2DA5EC;
 }
 
 ul li.menu-item:hover,
 ul li.menu-item:active {
-    fill: #2DA5EC;
     color: #2DA5EC;
     display: inline-block;
     text-align: center;
