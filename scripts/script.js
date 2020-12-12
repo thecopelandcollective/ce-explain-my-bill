@@ -84,6 +84,19 @@ for (i=0; i < toggleObjectArray.length; i++ ) {
   }
 }
 
+function hideContainers() {
+  const containerArray = document.querySelectorAll('.container');
+
+  for (i=0; i < containerArray.length; i++ ) {
+    containerArray[i].classList.remove('container--active');
+  }
+}
+
+function showContainer(activeSection) {
+  document.querySelector(`.container[data-expand="${activeSection}"]`).classList.add('container--active');
+}
+
+
 //On click event:
 //- check for the data attribute (data-bill)
 //- clear "container--active" from all .container
