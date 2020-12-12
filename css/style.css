@@ -1,0 +1,288 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+.content-wrap {
+    width: 990px;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.page-heading {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+}
+
+.padding-bottom-xl {
+    padding-bottom: 50px;
+}
+
+.padding-bottom-lg {
+    padding-bottom: 40px;
+}
+
+.padding-bottom-med {
+    padding-bottom: 25px;
+}
+
+.padding-bottom-sm {
+    padding-bottom: 10px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.ce-blue {
+    color: #0079C1;
+}
+
+.tab-menu {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul li.menu-item {
+    color: #ADADAD;
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    cursor: pointer;
+}
+
+ul li.menu-item svg {
+    fill: #ADADAD;
+}
+
+ul li.menu-item svg:hover,
+ul li.menu-item svg:active {
+    fill: #2DA5EC;
+}
+
+ul li.menu-item:hover,
+ul li.menu-item:active {
+    fill: #2DA5EC;
+    color: #2DA5EC;
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    border-bottom: 2px solid #2DA5EC;
+}
+
+.bill-wrapper {
+    background: #eeeeee;
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.container {
+  background: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.section {
+  position: relative;
+}
+.item {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.item:active {
+    border: 5px solid #9ED872;
+}
+
+.section-3 {
+    padding-bottom: 15px;
+}
+
+img {
+  width: 100%;
+}
+
+.object {
+  cursor: pointer;
+  position: absolute;
+  pointer-events: all;
+  left: 101%;
+  z-index: 1;
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  transition: ease-in-out all 1s;
+}
+
+.object__circle {
+  pointer-events: none;
+  background: #FFC425;
+  border-radius: 25px;
+  /*border: 3px solid #ffffff;*/
+  width: 40px;
+  height: 40px;
+  position: relative;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.4);
+}
+
+/* If you want to get rid of the material-icons */
+.object__material-icons {
+  position: absolute;
+  top: 2%;
+  color: #fff;
+  font-size: 40px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transition: ease-in-out all .3s;
+
+  /* material-icons styles: */
+  font-family: 'Material Icons';
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+.object--rotate .object__material-icons {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  background: #EB871B;
+  border-radius: 25px;
+  transition: ease-in-out all .3s;
+}
+
+/* If you need the material-icons */
+/* .material-icons {
+  position: absolute;
+  top: 2%;
+  color: #fff;
+  font-size: 40px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transition: ease-in-out all .3s;
+}
+
+.object--rotate .material-icons {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  transition: ease-in-out all .3s;
+} */
+
+.object--1 {
+top: 40%;
+}
+
+.object--2 {
+top: 13%;
+}
+
+.object--3 {
+top: 25%;
+}
+
+.expanding-panel {
+  display: block;
+  height: auto;
+  max-height: 0;
+  overflow: hidden;
+  background: #0067B3;
+  margin-left: -100px;
+  margin-right: -100px;
+  padding: 0;
+  color: #ffffff;
+  box-shadow: 0px 0px 20px inset rgba(0,0,0,0.4);
+  transition: ease-in-out max-height 600ms;
+}
+
+.expanding-panel--show {
+  max-height: 600px;
+  transition: ease-in-out max-height 600ms;
+}
+
+.expanding-panel__padding {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 25px 50px;
+}
+
+.expanding-panel__content {
+    width: 800px;
+    min-height: 270px;
+    margin: 0 auto;
+}
+
+.col-oneThird {
+    display: block;
+    float: left;
+    width: 33.333%
+}
+.col-twoThird {
+    display: block;
+    float: left;
+    width: 66.666%
+}
+
+button {
+  background: #fff;
+  color: #0067B3;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 599px) {
+    .container {
+      background: #ffffff;
+      width: 90%;
+    }
+
+    .object {
+        left: 95%;
+    }
+
+    .object__circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .object__material-icons {
+        font-size: 60px;
+    }
+
+}
