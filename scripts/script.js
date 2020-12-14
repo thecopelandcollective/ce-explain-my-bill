@@ -10,7 +10,7 @@ Main takeways include:
 
 // ## Vanilla JS ##
 // get all the .objects into an array
-const toggleObjectArray = document.querySelectorAll('.toggle-object');
+const toggleObjectArray = document.querySelectorAll('.toggle-object--left');
 
 // function to remove rotation from all
 function removeRotate() {
@@ -28,6 +28,14 @@ function hideExpandBox() {
   }
 }
 
+function hideHighlightedItem() {
+  const itemArray = document.querySelectorAll('.item');
+
+  for (i=0; i < itemArray.length; i++ ) {
+    itemArray[i].classList.remove('item--active');
+  }
+}
+
 // function to show the single active panel
 function showExpandBox(activeSection) {
   document.querySelector(`.expanding-panel[data-expand="${activeSection}"]`).classList.add('expanding-panel--show');
@@ -38,6 +46,7 @@ for (i=0; i < toggleObjectArray.length; i++ ) {
   toggleObjectArray[i].onclick = function(e) {
     // remove all expanded boxes if toggle object is clicked
     hideExpandBox();
+    hideHighlightedItem();
 
     if (e.target.classList.contains('toggle-object--rotate')) {
       // if the target is already open, remove the rotation class and do nothing else
@@ -52,20 +61,21 @@ for (i=0; i < toggleObjectArray.length; i++ ) {
       // and finally get the active section and expand the panel
       const activeSection = e.target.closest('.section').dataset.section;
       showExpandBox(activeSection);
+      }
     }
-  }
 }
 
+
 function hideContainers() {
-  const containerArray = document.querySelectorAll('.container');
+  const containerArray = document.querySelectorAll('.bill-paper');
 
   for (i=0; i < containerArray.length; i++ ) {
-    containerArray[i].classList.remove('container--active');
+    containerArray[i].classList.remove('bill-paper--active');
   }
 }
 
 function showContainer(activeSection) {
-  document.querySelector(`.container[data-expand="${activeSection}"]`).classList.add('container--active');
+  document.querySelector(`.bill-paper[data-expand="${activeSection}"]`).classList.add('bill-paper--active');
 }
 
 
