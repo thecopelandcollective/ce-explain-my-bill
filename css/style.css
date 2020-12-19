@@ -78,6 +78,11 @@ ul li.menu-item {
 
 ul li.menu-item svg {
     fill: #ADADAD;
+    pointer-events: none;
+}
+
+ul li.menu-item h6 {
+    pointer-events: none;
 }
 
 ul li.menu-item:hover svg,
@@ -146,14 +151,19 @@ ul li.menu-item--selected svg {
 .item {
   width: 95%;
   margin: 0 auto;
+  padding-top: 5px;
 }
 
-.item--active {
+.item--active svg {
     border: 5px solid #9ED872;
 }
 
 .section-3 {
     padding-bottom: 15px;
+}
+
+[data-section = 'section-7'], [data-section = 'section-8'], [data-section = 'section-9'] {
+    padding-top: 15px;
 }
 
 img {
@@ -175,7 +185,7 @@ img {
   cursor: pointer;
   position: absolute;
   pointer-events: all;
-  left: 95%;
+  left: -10%;
   z-index: 1;
   -webkit-transform: rotate(0);
   -moz-transform: rotate(0);
@@ -263,6 +273,7 @@ top: 50%;
   height: auto;
   max-height: 0;
   overflow: hidden;
+  z-index: 1;
   background: #0067B3;
   margin-left: -100px;
   margin-right: -100px;

@@ -10,7 +10,8 @@ Main takeways include:
 
 // ## Vanilla JS ##
 // get all the .objects into an array
-const toggleObjectArray = document.querySelectorAll('.toggle-object--left');
+const toggleObjectArray = document.querySelectorAll('.toggle-object'),
+      toggleMenuArray = document.querySelectorAll('.menu-item');
 
 // function to remove rotation from all
 function removeRotate() {
@@ -38,7 +39,10 @@ function hideHighlightedItem() {
 
 // function to show the single active panel
 function showExpandBox(activeSection) {
-  document.querySelector(`.expanding-panel[data-expand="${activeSection}"]`).classList.add('expanding-panel--show');
+    const panel = document.querySelector(`.expanding-panel[data-expand="${activeSection}"]`)
+    panel.classList.add('expanding-panel--show');
+    console.log(panel.previousElementSibling);
+    panel.previousElementSibling.querySelector('.item').classList.add('item--active');
 }
 
 // init function to bind click events
@@ -66,17 +70,34 @@ for (i=0; i < toggleObjectArray.length; i++ ) {
 }
 
 
-function hideContainers() {
+function hideBill() {
   const containerArray = document.querySelectorAll('.bill-paper');
 
   for (i=0; i < containerArray.length; i++ ) {
     containerArray[i].classList.remove('bill-paper--active');
   }
+  for (i=0; i < toggleMenuArray.length; i++ ) {
+    toggleMenuArray[i].classList.remove('menu-item--selected');
+  }
 }
 
-function showContainer(activeSection) {
-  document.querySelector(`.bill-paper[data-expand="${activeSection}"]`).classList.add('bill-paper--active');
+function showBill(billType) {
+    console.log(billType);
+  document.getElementById(billType).classList.add('bill-paper--active');
 }
+
+for (i=0; i < toggleMenuArray.length; i++ ) {
+  toggleMenuArray[i].onclick = function(e) {
+      console.log(e.target);
+      let billType = e.target.dataset.bill;
+
+      hideBill();
+      e.target.classList.add('menu-item--selected');
+      showBill(billType);
+  }
+}
+
+
 
 
 //On click event:
