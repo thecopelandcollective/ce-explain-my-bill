@@ -132,11 +132,14 @@ ul li.menu-item--selected svg {
 }
 
 .bill-paper {
-  display: none;
+    display: none;
+}
+
+.bill-paper__front, .bill-paper__back {
   background: #ffffff;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
   position: relative;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
@@ -147,6 +150,9 @@ ul li.menu-item--selected svg {
 
 .section {
   position: relative;
+}
+.news-info, .ways-to-pay {
+    padding-top: 50px;
 }
 .item {
   width: 95%;
@@ -162,8 +168,36 @@ ul li.menu-item--selected svg {
     padding-bottom: 15px;
 }
 
-[data-section = 'section-7'], [data-section = 'section-8'], [data-section = 'section-9'] {
+[data-section = 'section-gas-7'],
+[data-section = 'section-gas-8'],
+[data-section = 'section-gas-9'],
+[data-section = 'section-electric-7'],
+[data-section = 'section-electric-8'],
+[data-section = 'section-electric-9'] {
     padding-top: 15px;
+    width: 85%;
+}
+
+.expand-full-width-left {
+    width: calc(200% + 14.3rem);
+    margin-left: -31.1rem !important;
+}
+
+@media (max-width: 599px) {
+    .expand-full-width-left {
+        width: calc(200% + 14.3rem);
+    }
+}
+
+.expand-full-width-right {
+    width: calc(200% + 14.3rem);
+}
+
+.right-side {
+    z-index: 1111111;
+}
+.left-side {
+    z-index: 111;
 }
 
 img {
@@ -268,7 +302,10 @@ top: 13%;
 .object--3 {
 top: 50%;
 }
-
+.object--9 {
+    left: -4.8% !important;
+    top: 25%;
+}
 .expanding-panel {
   height: auto;
   max-height: 0;
@@ -297,6 +334,10 @@ top: 50%;
 .expanding-panel__content {
     min-height: 270px;
     margin: 0 auto;
+}
+
+.center-icon {
+    text-align: center;
 }
 
 button {
