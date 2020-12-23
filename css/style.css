@@ -54,12 +54,6 @@ p {
     color: #0079C1;
 }
 
-/* .tab-menu {
-    width: 100%;
-    position: relative;
-    display: block;
-} */
-
 ul {
     width: 100%;
     list-style: none;
@@ -173,7 +167,10 @@ ul li.menu-item--selected svg {
 [data-section = 'section-gas-9'],
 [data-section = 'section-electric-7'],
 [data-section = 'section-electric-8'],
-[data-section = 'section-electric-9'] {
+[data-section = 'section-electric-9'],
+[data-section = 'section-combined-7'],
+[data-section = 'section-combined-8'],
+[data-section = 'section-combined-9'] {
     padding-top: 15px;
     width: 85%;
 }
@@ -273,36 +270,14 @@ img {
   transition: ease-in-out all .3s;
 }
 
-/* If you need the material-icons */
-/* .material-icons {
-  position: absolute;
-  top: 2%;
-  color: #fff;
-  font-size: 40px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  transition: ease-in-out all .3s;
-}
-
-.object--rotate .material-icons {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-  transition: ease-in-out all .3s;
-} */
-
 .object--1 {
 top: 40%;
-}
-
-.object--2 {
-top: 13%;
 }
 
 .object--3 {
 top: 50%;
 }
-.object--9 {
+.object--9, .object--8__combined {
     left: -4.8% !important;
     top: 25%;
 }
