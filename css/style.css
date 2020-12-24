@@ -181,7 +181,7 @@ ul li.menu-item--selected svg {
     margin-left: -31.1rem !important;
 }
 
-@media (max-width: 599px) {
+@media only screen and (max-width: 599px) {
     .expand-full-width-left {
         width: calc(200% + 14.3rem);
     }
@@ -341,11 +341,11 @@ button:hover {
   display: none;
 }
 
-@media (min-width: 375px) {
+@media only screen and (max-width: 599px) {
     .object__circle {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
+        width: 60px !important;
+        height: 60px !important;
+        border-radius: 50% !important;
     }
 
     .object__material-icons {
