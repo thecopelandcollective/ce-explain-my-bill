@@ -155,7 +155,8 @@ ul li.menu-item--selected svg {
 }
 
 .item--active svg {
-    border: 5px solid #9ED872;
+    outline: 5px solid #9ED872;
+    transition: ease-in border .2s;
 }
 
 .section-3 {
@@ -207,8 +208,9 @@ img {
   pointer-events: all;
   left: 95%;
   z-index: 1;
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
+  border-radius: 25px;
+  width: 40px;
+  height: 40px;
   transition: ease-in-out all 1s;
 }
 
@@ -218,8 +220,9 @@ img {
   pointer-events: all;
   left: -10%;
   z-index: 1;
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
+  border-radius: 25px;
+  width: 40px;
+  height: 40px;
   transition: ease-in-out all 1s;
 }
 
@@ -227,11 +230,11 @@ img {
   pointer-events: none;
   background: #FFC425;
   border-radius: 25px;
-  /*border: 3px solid #ffffff;*/
   width: 40px;
   height: 40px;
   position: relative;
   box-shadow: 1px 3px 5px rgba(0,0,0,0.4);
+  transition: ease-in-out all 1s;
 }
 
 /* If you want to get rid of the material-icons */
@@ -242,7 +245,7 @@ img {
   font-size: 40px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
-  transition: ease-in-out all .3s;
+  transition: ease-in-out all .2s;
 
   /* material-icons styles: */
   font-family: 'Material Icons';
@@ -261,13 +264,16 @@ img {
   font-feature-settings: 'liga';
 }
 
-.toggle-object--rotate .toggle-object__material-icons {
+.toggle-object--rotate .toggle-object__circle > .toggle-object__material-icons {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-  background: #EB871B;
-  border-radius: 25px;
-  transition: ease-in-out all .3s;
+  transition: ease-in-out all .1s;
+}
+
+.toggle-object--rotate .toggle-object__circle {
+    background: #EB871B;
+    transition: ease-in all .1s;
 }
 
 .object--1 {
@@ -288,16 +294,17 @@ top: 50%;
   z-index: 1;
   background: #0067B3;
   margin-left: -100px;
+  margin-top: 10px;
   margin-right: -100px;
   padding: 0;
   color: #ffffff;
   box-shadow: 0px 0px 20px inset rgba(0,0,0,0.4);
-  transition: ease-in-out max-height 600ms;
+  transition: ease-in max-height .3s;
 }
 
 .expanding-panel--show {
   max-height: 600px;
-  transition: ease-in-out max-height 600ms;
+  transition: ease-in max-height .3s;
 }
 
 .expanding-panel__padding {
