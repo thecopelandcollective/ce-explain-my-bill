@@ -54,20 +54,21 @@ p {
     color: #0079C1;
 }
 
-ul {
+ul.tabs {
     width: 100%;
     list-style: none;
-    display: inline-block;
+    display: flex;
     padding: 0;
     margin: 0;
 }
 
-ul li.menu-item {
+ul.tabs li.menu-item {
     color: #ADADAD;
-    display: inline-block;
+    display: block;
     text-align: center;
     width: 33%;
     cursor: pointer;
+    padding: 0 .7rem;
 }
 
 ul li.menu-item svg {
@@ -76,6 +77,7 @@ ul li.menu-item svg {
 }
 
 ul li.menu-item h6 {
+    font-size: 14px;
     pointer-events: none;
 }
 
@@ -181,7 +183,7 @@ ul li.menu-item--selected svg {
     margin-left: -31.1rem !important;
 }
 
-@media only screen and (max-width: 599px) {
+@media (max-width: 599px) {
     .expand-full-width-left {
         width: calc(200% + 14.3rem);
     }
@@ -341,7 +343,7 @@ button:hover {
   display: none;
 }
 
-@media only screen and (max-width: 599px) {
+@media (max-width: 599px) {
     .object__circle {
         width: 60px !important;
         height: 60px !important;
