@@ -156,6 +156,10 @@ ul li.menu-item--selected svg {
   padding-top: 5px;
 }
 
+.item--right-side {
+    width: 50%;
+}
+
 .item--active svg {
     outline: 5px solid #9ED872;
     transition: ease-in border .2s;
@@ -181,12 +185,6 @@ ul li.menu-item--selected svg {
 .expand-full-width-left {
     width: calc(200% + 14.3rem);
     margin-left: -31.1rem !important;
-}
-
-@media (max-width: 599px) {
-    .expand-full-width-left {
-        width: calc(200% + 14.3rem);
-    }
 }
 
 .expand-full-width-right {
@@ -344,14 +342,52 @@ button:hover {
 }
 
 @media (max-width: 599px) {
-    .object__circle {
-        width: 60px !important;
-        height: 60px !important;
+    .toggle-object__circle {
+        width: 50px !important;
+        height: 50px !important;
         border-radius: 50% !important;
     }
 
-    .object__material-icons {
-        font-size: 60px;
+    .toggle-object__material-icons {
+        font-size: 50px;
+    }
+
+    .toggle-object--right {
+        left: -40px;
+    }
+
+    .object--4 {
+        top: 0;
+    }
+
+    .object--6 {
+        top: 30px;
+    }
+
+    .object--9 {
+        left: -13.8% !important;
+    }
+
+    .item--right-side {
+        width: 100%;
+    }
+
+    .expanding-panel {
+        margin-right: -46px;
+        margin-left: -46px;
+    }
+
+    .expanding-panel__padding {
+        padding: 25px 15px;
+    }
+
+    .expand-full-width-left {
+        width: calc(200% + 8rem);
+        margin-left: -13rem !important;
+    }
+
+    .expand-full-width-right {
+        width: calc(200% + 8rem);
     }
 
 }
