@@ -191,11 +191,11 @@ ul li.menu-item--selected svg {
     width: calc(200% + 14.3rem);
 }
 
-.right-side {
-    z-index: 1111111;
+/.right-side {
+    z-index: 1;
 }
 .left-side {
-    z-index: 111;
+    z-index: 11;
 }
 
 img {
@@ -318,6 +318,10 @@ top: 50%;
     margin: 0 auto;
 }
 
+.top-layer {
+    z-index: 111111111 !important;
+}
+
 .center-icon {
     text-align: center;
 }
@@ -353,7 +357,11 @@ button:hover {
     }
 
     .toggle-object--right {
-        left: -40px;
+        left: -10px;
+    }
+
+    .toggle-object--left {
+        left: 85% !important;
     }
 
     .object--4 {
@@ -364,8 +372,16 @@ button:hover {
         top: 30px;
     }
 
+    .object--7 {
+        left: 68% !important;
+    }
+
+    .object--8 {
+        left: -10px !important;
+    }
+
     .object--9 {
-        left: -13.8% !important;
+        left: -10px !important;
     }
 
     .item--right-side {
@@ -381,13 +397,21 @@ button:hover {
         padding: 25px 15px;
     }
 
+    .expanding-panel__content {
+        width: 90%;
+    }
+
     .expand-full-width-left {
-        width: calc(200% + 8rem);
-        margin-left: -13rem !important;
+        width: calc(200% + 5rem);
+        margin-left: -14rem !important;
     }
 
     .expand-full-width-right {
-        width: calc(200% + 8rem);
+        width: calc(200% + 6rem);
+    }
+
+    .no-pad__mobile {
+        padding: 0 !important;
     }
 
 }

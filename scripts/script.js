@@ -12,14 +12,20 @@ Main takeways include:
 // get all the .objects into an array
 const toggleObjectArray = document.querySelectorAll('.toggle-object'),
       toggleMenuArray = document.querySelectorAll('.menu-item');
+      toggleTopLayer = document.querySelectorAll('.col-6');
 
 // function to remove rotation from all
 function removeRotate() {
   for (i=0; i < toggleObjectArray.length; i++ ) {
-    toggleObjectArray[i].classList.remove('toggle-object--rotate')
+    toggleObjectArray[i].classList.remove('toggle-object--rotate');
   }
 }
 
+function removeTopLayer() {
+    for(i=0; i < toggleTopLayer.length; i++) {
+        toggleTopLayer[i].classList.remove('top-layer');
+    }
+}
 // function to hide all expanded panels
 function hideExpandBox() {
   const panelArray = document.querySelectorAll('.expanding-panel');
@@ -41,6 +47,8 @@ function hideHighlightedItem() {
 function showExpandBox(activeSection) {
     const panel = document.querySelector(`.expanding-panel[data-expand="${activeSection}"]`)
     panel.classList.add('expanding-panel--show');
+    console.log(panel.parentNode);
+    panel.parentElement.classList.add('top-layer');
     console.log(panel.previousElementSibling);
     panel.previousElementSibling.querySelector('.item').classList.add('item--active');
 }
@@ -51,6 +59,7 @@ for (i=0; i < toggleObjectArray.length; i++ ) {
     // remove all expanded boxes if toggle object is clicked
     hideExpandBox();
     hideHighlightedItem();
+    removeTopLayer();
 
     if (e.target.classList.contains('toggle-object--rotate')) {
       // if the target is already open, remove the rotation class and do nothing else
