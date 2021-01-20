@@ -112,6 +112,7 @@ ul li.menu-item--selected svg {
 .legend {
     padding: 25px 0 25px 25px;
     background: #ffffff;
+    align-items: center;
 }
 
 .legend__icons {
@@ -123,8 +124,7 @@ ul li.menu-item--selected svg {
 .legend__description {
     color: #707070;
     padding-left: 25px;
-    justify-content: center;
-    align-content: center;
+    top: 8px;
 }
 
 .bill-paper {
@@ -154,6 +154,7 @@ ul li.menu-item--selected svg {
   width: 95%;
   margin: 0 auto;
   padding-top: 5px;
+  border: 1px solid transparent;
 }
 
 .item--right-side {
@@ -162,7 +163,7 @@ ul li.menu-item--selected svg {
 
 .item--active svg {
     outline: 5px solid #9ED872;
-    transition: ease-in border .2s;
+    transition: ease border;
 }
 
 .section-3 {
@@ -412,6 +413,10 @@ button:hover {
 
     .no-pad__mobile {
         padding: 0 !important;
+    }
+
+    .legend__details {
+        font-size: 16px;
     }
 
 }
