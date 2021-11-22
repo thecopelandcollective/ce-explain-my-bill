@@ -158,7 +158,12 @@ ul li.menu-item--selected svg {
 }
 
 .item--right-side {
-    width: 50%;
+    width: 66%;
+}
+
+.item--left-side {
+    width: 120%;
+    margin-left: -60px;
 }
 
 .item--active svg {
@@ -197,6 +202,7 @@ ul li.menu-item--selected svg {
 }
 .left-side {
     z-index: 11;
+    padding-top: 30px;
 }
 
 img {
