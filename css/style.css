@@ -150,11 +150,17 @@ ul li.menu-item--selected svg {
 .news-info, .ways-to-pay {
     padding-top: 50px;
 }
+svg {
+    width: 100%;
+}
 .item {
   width: 95%;
   margin: 0 auto;
   padding-top: 5px;
   border: 1px solid transparent;
+}
+.item-2 {
+    width: 87.5%;
 }
 
 .item--right-side {
@@ -166,6 +172,18 @@ ul li.menu-item--selected svg {
     margin-left: -60px;
 }
 
+.item--left-front {
+    width: 103%;
+    margin-left: 0;
+    border: 1px solid transparent;
+}
+
+.item--right-front {
+    width: 90%;
+    margin-left: -7px;
+    border: 1px solid transparent;
+}
+
 .item--active svg {
     outline: 5px solid #9ED872;
     transition: ease border;
@@ -173,6 +191,10 @@ ul li.menu-item--selected svg {
 
 .section-3 {
     padding-bottom: 15px;
+}
+
+.section-3-combined {
+    padding-bottom: 0;
 }
 
 [data-section = 'section-gas-7'],
@@ -196,13 +218,33 @@ ul li.menu-item--selected svg {
 .expand-full-width-right {
     width: calc(200% + 14.3rem);
 }
+.expand-full-width-right-front {
+    width: calc(134% + 18.5rem);
+    margin-left: -119px !important;
+}
 
-/.right-side {
+.expand-full-width-left-front {
+    width: calc(200% + 31rem);
+    margin-left: -640px !important;
+}
+
+.right-side {
     z-index: 1;
 }
 .left-side {
     z-index: 11;
     padding-top: 30px;
+}
+
+.right-side-front {
+    padding-right: 6px;
+    padding-left: 30px;
+    height: 350px;
+}
+.left-side-front {
+    height: 350px;
+    padding-left: 39px;
+    padding-right: 0;
 }
 
 img {
