@@ -3,7 +3,7 @@ body {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .content-wrap {
@@ -34,6 +34,9 @@ p {
     padding-top: 40px;
 }
 
+.padding-top-md {
+    padding-top: 25px;
+}
 .padding-bottom-med {
     padding-bottom: 25px;
 }
@@ -46,12 +49,32 @@ p {
     padding-top: 10px;
 }
 
+.no-padding {
+  padding: 0 !important;
+}
+
 .centered {
     text-align: center;
 }
 
 .ce-blue {
     color: #0079C1;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #40A2E7;
+    border: 2px solid #40A2E7;
+}
+.nav-pills .nav-link {
+    border-radius: 0 !important;
+    border: 2px solid #ACACAC;
+}
+
+.nav-item {
+  width: 50%;
+  text-align: center;
+
 }
 
 ul.tabs {
@@ -105,26 +128,8 @@ ul li.menu-item--selected svg {
 }
 
 .bill-wrapper {
-    background: #eeeeee;
-    padding-top: 80px;
-}
-
-.legend {
-    padding: 25px 0 25px 25px;
     background: #ffffff;
-    align-items: center;
-}
-
-.legend__icons {
-    width: 20%;
-    border-right: 2px solid #707070;
-    text-align: center;
-}
-
-.legend__description {
-    color: #707070;
-    padding-left: 25px;
-    top: 8px;
+    padding-top: 10px;
 }
 
 .bill-paper {
@@ -133,11 +138,9 @@ ul li.menu-item--selected svg {
 
 .bill-paper__front, .bill-paper__back {
   background: #ffffff;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 0 auto 60px;
+  padding: 0;
+  margin: 0 auto;
   position: relative;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .bill-paper--active {
@@ -147,225 +150,14 @@ ul li.menu-item--selected svg {
 .section {
   position: relative;
 }
-.news-info, .ways-to-pay {
-    padding-top: 50px;
-}
 svg {
     width: 100%;
-}
-.item {
-  width: 95%;
-  margin: 0 auto;
-  padding-top: 5px;
-  border: 1px solid transparent;
-}
-.item-2 {
-    width: 87.5%;
-}
-
-.item--right-side {
-    width: 66%;
-}
-
-.item--left-side {
-    width: 120%;
-    margin-left: -60px;
-}
-
-.item--left-front {
-    width: 103%;
-    margin-left: 0;
-    border: 1px solid transparent;
-}
-
-.item--right-front {
-    width: 90%;
-    margin-left: -7px;
-    border: 1px solid transparent;
-}
-
-.item--active svg {
-    outline: 5px solid #9ED872;
-    transition: ease border;
-}
-
-.section-3 {
-    padding-bottom: 15px;
-}
-
-.section-3-combined {
-    padding-bottom: 0;
-}
-
-[data-section = 'section-gas-7'],
-[data-section = 'section-gas-8'],
-[data-section = 'section-gas-9'],
-[data-section = 'section-electric-7'],
-[data-section = 'section-electric-8'],
-[data-section = 'section-electric-9'],
-[data-section = 'section-combined-7'],
-[data-section = 'section-combined-8'],
-[data-section = 'section-combined-9'] {
-    padding-top: 15px;
-    width: 85%;
-}
-
-.expand-full-width-left {
-    width: calc(200% + 14.3rem);
-    margin-left: -31.1rem !important;
-}
-
-.expand-full-width-right {
-    width: calc(200% + 14.3rem);
-}
-.expand-full-width-right-front {
-    width: calc(134% + 18.5rem);
-    margin-left: -119px !important;
-}
-
-.expand-full-width-left-front {
-    width: calc(200% + 31rem);
-    margin-left: -640px !important;
-}
-
-.right-side {
-    z-index: 1;
-}
-.left-side {
-    z-index: 11;
-    padding-top: 30px;
-}
-
-.right-side-front {
-    padding-right: 6px;
-    padding-left: 30px;
-    height: 350px;
-}
-.left-side-front {
-    height: 350px;
-    padding-left: 39px;
-    padding-right: 0;
 }
 
 img {
   width: 100%;
 }
 
-.toggle-object--left {
-  cursor: pointer;
-  position: absolute;
-  pointer-events: all;
-  left: 95%;
-  z-index: 1;
-  border-radius: 25px;
-  width: 40px;
-  height: 40px;
-  transition: ease-in-out all 1s;
-}
-
-.toggle-object--right {
-  cursor: pointer;
-  position: absolute;
-  pointer-events: all;
-  left: -10%;
-  z-index: 1;
-  border-radius: 25px;
-  width: 40px;
-  height: 40px;
-  transition: ease-in-out all 1s;
-}
-
-.toggle-object__circle {
-  pointer-events: none;
-  background: #FFC425;
-  border-radius: 25px;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.4);
-  transition: ease-in-out all 1s;
-}
-
-/* If you want to get rid of the material-icons */
-.toggle-object__material-icons {
-  position: absolute;
-  top: 2%;
-  color: #fff;
-  font-size: 40px;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  transition: ease-in-out all .2s;
-
-  /* material-icons styles: */
-  font-family: 'Material Icons';
-  font-weight: 400;
-  font-style: normal;
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-}
-
-.toggle-object--rotate .toggle-object__circle > .toggle-object__material-icons {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-  transition: ease-in-out all .1s;
-}
-
-.toggle-object--rotate .toggle-object__circle {
-    background: #EB871B;
-    transition: ease-in all .1s;
-}
-
-.object--1 {
-top: 40%;
-}
-
-.object--3 {
-top: 50%;
-}
-.object--9, .object--8__combined {
-    left: -4.8% !important;
-    top: 25%;
-}
-.expanding-panel {
-  height: auto;
-  max-height: 0;
-  overflow: hidden;
-  z-index: 1;
-  background: #0067B3;
-  margin-left: -100px;
-  margin-top: 10px;
-  margin-right: -100px;
-  padding: 0;
-  color: #ffffff;
-  box-shadow: 0px 0px 20px inset rgba(0,0,0,0.4);
-  transition: ease-in max-height .3s;
-}
-
-.expanding-panel--show {
-  max-height: 600px;
-  transition: ease-in max-height .3s;
-}
-
-.expanding-panel__padding {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 25px 50px;
-}
-
-.expanding-panel__content {
-    min-height: 270px;
-    margin: 0 auto;
-}
 
 .top-layer {
     z-index: 111111111 !important;
@@ -376,95 +168,109 @@ top: 50%;
 }
 
 button {
-  background: #fff;
-  color: #0067B3;
+  background: #639D36;
+  color: #ffffff;
   font-size: 16px;
   border: none;
   padding: 10px 20px;
   transition: ease-in-out all 200ms;
 }
 
+button.round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #FFC425;
+  color: #232323;
+  box-shadow: 3px 4px 5px rgba(0,0,0,0.3);
+  font-size: 24px;
+}
+
+button.round:hover {
+  background: #F3AE00;
+  color: #232323;
+}
+button.close {
+  background: transparent !important;
+  box-shadow: none !important;
+}
 button:hover {
     background: #9ED872;
     color: #ffffff;
     box-shadow: 1px 2px 8px rgba(0,0,0,0.4);
 }
+.modal {
+  top: 25% !important;
+}
 
 .hide {
   display: none;
 }
+.no-pad__mobile {
+      padding: 0 !important;
+}
 
-@media (max-width: 599px) {
-    .toggle-object__circle {
-        width: 50px !important;
-        height: 50px !important;
-        border-radius: 50% !important;
-    }
 
-    .toggle-object__material-icons {
-        font-size: 50px;
-    }
+@media (min-width: 600px) {
+  ul.tabs {
+      width: 100%;
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+  }
 
-    .toggle-object--right {
-        left: -10px;
-    }
+  ul.tabs li.menu-item {
+      color: #ADADAD;
+      display: block;
+      text-align: center;
+      width: 100%;
+      cursor: pointer;
+      padding: 0 .7rem;
+  }
 
-    .toggle-object--left {
-        left: 85% !important;
-    }
-
-    .object--4 {
-        top: 0;
-    }
-
-    .object--6 {
-        top: 30px;
-    }
-
-    .object--7 {
-        left: 68% !important;
-    }
-
-    .object--8 {
-        left: -10px !important;
-    }
-
-    .object--9 {
-        left: -10px !important;
-    }
-
-    .item--right-side {
-        width: 100%;
-    }
-
-    .expanding-panel {
-        margin-right: -46px;
-        margin-left: -46px;
-    }
-
-    .expanding-panel__padding {
-        padding: 25px 15px;
-    }
-
-    .expanding-panel__content {
-        width: 90%;
-    }
-
-    .expand-full-width-left {
-        width: calc(200% + 5rem);
-        margin-left: -14rem !important;
-    }
-
-    .expand-full-width-right {
-        width: calc(200% + 6rem);
-    }
-
-    .no-pad__mobile {
-        padding: 0 !important;
-    }
-
-    .legend__details {
-        font-size: 16px;
-    }
-
+  .tab-content {
+    display: block;
+    visibility: visible;
+  }
+  .bill-paper {
+    display: none;
+  }
+  .bill-paper--active {
+      display: block;
+  }
+}
+/*FAB positioning*/
+.total-electric-use {
+  position: absolute;
+  top: 30%;
+  left: 10px;
+}
+.electric-monthly-energy-summary {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+}
+.electric-payment-coupon {
+  position: absolute;
+  top: 80%;
+  right: 10px;
+}
+.electric-account-info {
+  position: absolute;
+  top: 19%;
+  left: 10px;
+}
+.electric-monthly-charges-details {
+  position: absolute;
+  top: 20%;
+  right: 10px;
+}
+.electric-rate-info {
+  position: absolute;
+  top: 35%;
+  left: 10px;
 }
