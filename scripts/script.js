@@ -9,81 +9,16 @@ Main takeways include:
 */
 
 // ## Vanilla JS ##
-// get all the .objects into an array
-// const toggleObjectArray = document.querySelectorAll('.toggle-object'),
-      toggleMenuArray = document.querySelectorAll('.menu-item');
-      // toggleTopLayer = document.querySelectorAll('.col-6');
 
-// function to remove rotation from all
-// function removeRotate() {
-//   for (i=0; i < toggleObjectArray.length; i++ ) {
-//     toggleObjectArray[i].classList.remove('toggle-object--rotate');
-//   }
-// }
-//
-// function removeTopLayer() {
-//     for(i=0; i < toggleTopLayer.length; i++) {
-//         toggleTopLayer[i].classList.remove('top-layer');
-//     }
-// }
-// function to hide all expanded panels
-// function hideExpandBox() {
-//   const panelArray = document.querySelectorAll('.expanding-panel');
-//
-//   for (i=0; i < panelArray.length; i++ ) {
-//     panelArray[i].classList.remove('expanding-panel--show');
-//   }
-// }
-//
-// function hideHighlightedItem() {
-//   const itemArray = document.querySelectorAll('.item');
-//
-//   for (i=0; i < itemArray.length; i++ ) {
-//     itemArray[i].classList.remove('item--active');
-//   }
-// }
+    const toggleMenuArray = document.querySelectorAll('.menu-item');
 
-// function to show the single active panel
-// function showExpandBox(activeSection) {
-//     const panel = document.querySelector(`.expanding-panel[data-expand="${activeSection}"]`)
-//     panel.classList.add('expanding-panel--show');
-//     console.log(panel.parentNode);
-//     panel.parentElement.classList.add('top-layer');
-//     console.log(panel.previousElementSibling);
-//     panel.previousElementSibling.querySelector('.item').classList.add('item--active');
-// }
-
-// init function to bind click events
-// for (i=0; i < toggleObjectArray.length; i++ ) {
-//   toggleObjectArray[i].onclick = function(e) {
-//     // remove all expanded boxes if toggle object is clicked
-//     hideExpandBox();
-//     hideHighlightedItem();
-//     removeTopLayer();
-//
-//     if (e.target.classList.contains('toggle-object--rotate')) {
-//       // if the target is already open, remove the rotation class and do nothing else
-//       removeRotate();
-//     } else {
-//       // if the target is not open, still remove rotation classes
-//       removeRotate();
-//
-//       // then add the single instance of the rotation class
-//       e.target.classList.add('toggle-object--rotate');
-//
-//       // and finally get the active section and expand the panel
-//       const activeSection = e.target.closest('.section').dataset.section;
-//       showExpandBox(activeSection);
-//       }
-//     }
-// }
 
 
 function hideBill() {
-  const containerArray = document.querySelectorAll('.bill-paper');
+  const containerArray = document.querySelectorAll('.bill-wrapper');
 
   for (i=0; i < containerArray.length; i++ ) {
-    containerArray[i].classList.remove('bill-paper--active');
+    containerArray[i].classList.remove('bill-wrapper--active');
   }
   for (i=0; i < toggleMenuArray.length; i++ ) {
     toggleMenuArray[i].classList.remove('menu-item--selected');
@@ -92,7 +27,7 @@ function hideBill() {
 
 function showBill(billType) {
     console.log(billType);
-  document.getElementById(billType).classList.add('bill-paper--active');
+  document.getElementById(billType).classList.add('bill-wrapper--active');
 }
 
 for (i=0; i < toggleMenuArray.length; i++ ) {
