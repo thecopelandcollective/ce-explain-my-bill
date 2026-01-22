@@ -194,7 +194,7 @@ button.round {
   background: #0079C1;
   color: #ffffff;
   box-shadow: 3px 4px 5px rgba(0,0,0,0.3);
-  font-size: 28px;
+  font-size: 24px;
 }
 
 button.round:hover {
@@ -209,6 +209,10 @@ button:hover {
     background: #9ED872;
     color: #ffffff;
     box-shadow: 1px 2px 8px rgba(0,0,0,0.4);
+}
+
+.half-size {
+  width: 50%;
 }
 
 @keyframes bounce {
@@ -235,34 +239,49 @@ button:hover {
 }
 
 /*FAB positioning*/
-.total-electric-use {
+.total-use {
   position: absolute;
   top: 30%;
   left: 10px;
 }
-.electric-monthly-energy-summary {
+.monthly-energy-summary {
   position: absolute;
   top: 40%;
   right: 10px;
 }
-.electric-payment-coupon {
+.payment-coupon {
   position: absolute;
   top: 80%;
   right: 10px;
 }
-.electric-account-info {
+.account-info {
   position: absolute;
-  top: 19%;
+  top: 5%;
   left: 10px;
 }
-.electric-monthly-charges-details {
+.monthly-charges-details {
   position: absolute;
   top: 20%;
   right: 10px;
 }
-.electric-rate-info {
+.rate-info {
   position: absolute;
-  top: 35%;
+  top: 14%;
+  left: 110px;
+}
+.meter-info {
+  position: absolute;
+  top: 25%;
+  left: 10px;
+}
+.news-info {
+  position: absolute;
+  top: 71%;
+  left: 10px;
+}
+.ways-to-pay {
+  position: absolute;
+  top: 90%;
   left: 10px;
 }
 

@@ -78,22 +78,22 @@
                 <img src="images/electric-front-26@2x.png" />
                 <!--Interactive Touch Points-->
                 <button
-                  class="round total-electric-use button-wobble"
+                  class="round total-use button-wobble"
                   data-toggle="modal"
                   data-target="#total-electric-use">
-                  <i class="fa fa-question"></i>
+                  <i class="fa fa-info"></i>
                 </button>
                 <button
-                  class="round electric-monthly-energy-summary button-wobble"
+                  class="round monthly-energy-summary button-wobble"
                   data-toggle="modal"
                   data-target="#electric-monthly-energy-summary">
-                  <i class="fa fa-plus"></i>
+                  <i class="fa fa-info"></i>
                 </button>
                 <button
-                  class="round electric-payment-coupon button-wobble"
+                  class="round payment-coupon button-wobble"
                   data-toggle="modal"
                   data-target="#electric-payment-coupon">
-                  <i class="fa fa-plus"></i>
+                  <i class="fa fa-info"></i>
                 </button>
                 <!--Modals for touch points-->
                 <div class="modal fade" id="total-electric-use" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
@@ -108,7 +108,7 @@
                       <div class="modal-body">
                         <div class="row">
                           <div class="col">
-                            <img src="images/total-electric-use.png">
+                            <img src="images/total-electric-use-clip@2x.png">
                           </div>
                         </div>
                         <div class="row pt-2 pb-2">
@@ -143,7 +143,7 @@
                       <div class="modal-body">
                         <div class="row pt-2 pb-2">
                           <div class="col">
-                            <img src="images/electric-monthly-summary.png">
+                            <img src="images/monthly-electric-use-clip@2x.png">
                           </div>
                           <div class="col">
                             <p>Electric use is measured in kilowatt-hours and then billed according to your actual use. For more information on your specific rate, see our Energy Charges Explained page.</p>
@@ -170,7 +170,7 @@
                       <div class="modal-body">
                         <div class="row">
                           <div class="col">
-                            <img src="images/electric-footer-front.svg">
+                            <img src="images/electric-payment-coupon-clip@2x.png">
                           </div>
                         </div>
                         <div class="row pt-3 pb-2">
@@ -196,22 +196,40 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
 
               <!--Interactive Touch Points-->
               <button
-                class="round electric-account-info"
+                class="round account-info button-wobble"
                 data-toggle="modal"
                 data-target="#electric-account-info">
-                <i class="fa fa-plus"></i>
+                <i class="fa fa-info"></i>
               </button>
               <button
-                class="round electric-monthly-charges-details"
+                class="round monthly-charges-details button-wobble"
                 data-toggle="modal"
                 data-target="#electric-monthly-charges-details">
-                <i class="fa fa-plus"></i>
+                <i class="fa fa-info"></i>
               </button>
               <button
-                class="round electric-rate-info"
+                class="round rate-info button-wobble"
                 data-toggle="modal"
                 data-target="#electric-rate-info">
-                <i class="fa fa-plus"></i>
+                <i class="fa fa-info"></i>
+              </button>
+              <button
+                class="round meter-info button-wobble"
+                data-toggle="modal"
+                data-target="#electric-meter-info">
+                <i class="fa fa-info"></i>
+              </button>
+              <button
+                class="round news-info button-wobble"
+                data-toggle="modal"
+                data-target="#electric-news-info">
+                <i class="fa fa-info"></i>
+              </button>
+              <button
+                class="round ways-to-pay button-wobble"
+                data-toggle="modal"
+                data-target="#electric-ways-to-pay">
+                <i class="fa fa-info"></i>
               </button>
               <!--Modals for touch points-->
               <div class="modal fade" id="electric-account-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
@@ -226,7 +244,7 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                     <div class="modal-body">
                       <div class="row">
                         <div class="col">
-                          <img src="images/electric-account-info.svg">
+                          <img class="half-size" src="images/electric-acct-info-clip@2x.png">
                         </div>
                       </div>
                       <div class="row pt-3 pb-2">
@@ -255,7 +273,7 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                     <div class="modal-body">
                       <div class="row pt-2 pb-2">
                         <div class="col">
-                          <img src="images/electric-bill-details.svg">
+                          <img src="images/electric-energy-bill-details-clip@2x.png">
                         </div>
                         <div class="col">
                           <p>This is where we keep you informed about everything included in your rate. If you have questions, call us at 1-800-477-5050 or monitor your account online. Log in to get started.</p>
@@ -282,7 +300,7 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                     <div class="modal-body">
                       <div class="row">
                         <div class="col">
-                          <img src="images/electric-rate-info.svg">
+                          <img class="half-size" src="images/electric-rate-info-clip@2x.png">
                         </div>
                       </div>
                       <div class="row pt-3 pb-2">
@@ -293,6 +311,93 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                       <div class="row centered">
                         <div class="col">
                           <button href="/customer/account/dashboard">Pay Your Bill</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="electric-meter-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Meter Information</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col">
+                          <img class="half-size" src="images/electric-meter-info-clip@2x.png">
+                        </div>
+                      </div>
+                      <div class="row pt-3 pb-2">
+                        <div class="col">
+                          <p>In this section, you can view details about your energy use, including the meter number and the last time we read the meter. If you have an upgraded meter, you can log in online to view your energy use trends and tools that can save you energy and money.</p>
+                        </div>
+                      </div>
+                      <div class="row centered">
+                        <div class="col">
+                          <button href="#">Log In</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="electric-news-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">News Information</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col">
+                          <img src="images/electric-news-cliip@2x.png">
+                        </div>
+                      </div>
+                      <div class="row pt-3 pb-2">
+                        <div class="col">
+                          <p>This section helps you stay up to date on Michigan energy trends and news.</p>
+                        </div>
+                      </div>
+                      <!-- <div class="row centered">
+                        <div class="col">
+                          <button href="/customer/account/dashboard">Pay Your Bill</button>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="electric-ways-to-pay" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Ways to Pay</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col">
+                          <img src="images/electric-waystopay-clip@2x.png">
+                        </div>
+                      </div>
+                      <div class="row pt-3 pb-2">
+                        <div class="col">
+                          <p>You can choose from a variety of ways to pay your bill.</p>
+                        </div>
+                      </div>
+                      <div class="row centered">
+                        <div class="col">
+                          <button href="#">Payment Options</button>
                         </div>
                       </div>
                     </div>
@@ -326,29 +431,29 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                 <img src="images/gas-front-26@2x.png" />
                 <!--Interactive Touch Points-->
                 <button
-                  class="round total-electric-use"
+                  class="round total-use button-wobble"
                   data-toggle="modal"
-                  data-target="#total-electric-use">
-                  <i class="fa fa-plus"></i>
+                  data-target="#total-gas-use">
+                  <i class="fa fa-info"></i>
                 </button>
                 <button
-                  class="round electric-monthly-energy-summary"
+                  class="round monthly-energy-summary button-wobble"
                   data-toggle="modal"
-                  data-target="#electric-monthly-energy-summary">
-                  <i class="fa fa-plus"></i>
+                  data-target="#gas-monthly-energy-summary">
+                  <i class="fa fa-info"></i>
                 </button>
                 <button
-                  class="round electric-payment-coupon"
+                  class="round payment-coupon button-wobble"
                   data-toggle="modal"
-                  data-target="#electric-payment-coupon">
-                  <i class="fa fa-plus"></i>
+                  data-target="#gas-payment-coupon">
+                  <i class="fa fa-info"></i>
                 </button>
                 <!--Modals for touch points-->
-                <div class="modal fade" id="total-electric-use" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                <div class="modal fade" id="total-gas-use" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Total Electric Use</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Total Gas Use</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -356,12 +461,12 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                       <div class="modal-body">
                         <div class="row">
                           <div class="col">
-                            <img src="images/total-electric-use.png">
+                            <img src="images/gas-total-usage-clip@2x.png">
                           </div>
                         </div>
                         <div class="row pt-2 pb-2">
                           <div class="col">
-                            <p>This area of your bill shows you how much electricity your home used over the last 13 months. You can use your energy use history to:</p>
+                            <p>This area of your bill shows you how much gas your home used over the last 13 months. You can use your energy use history to:</p>
                             <ul>
                               <li>Detect fluctuations</li>
                               <li>Identify high-use months and determine future energy saving plans</li>
@@ -379,11 +484,11 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                     </div>
                   </div>
                 </div>
-                <div class="modal fade" id="electric-monthly-energy-summary" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                <div class="modal fade" id="gas-monthly-energy-summary" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Monthly Energy Summary</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Monthly Gas Summary</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -391,10 +496,10 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                       <div class="modal-body">
                         <div class="row pt-2 pb-2">
                           <div class="col">
-                            <img src="images/electric-monthly-summary.png">
+                            <img src="images/gas-monthly-usage-clip@2x.png">
                           </div>
                           <div class="col">
-                            <p>Electric use is measured in kilowatt-hours and then billed according to your actual use. For more information on your specific rate, see our Energy Charges Explained page.</p>
+                            <p>Natural gas use is measured in thousand cubic feet and then billed according to your actual use. For more information on your specific rate, see our Energy Charges Explained page.</p>
                           </div>
                         </div>
                         <div class="row centered">
@@ -406,7 +511,7 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                     </div>
                   </div>
                 </div>
-                <div class="modal fade" id="electric-payment-coupon" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                <div class="modal fade" id="gas-payment-coupon" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -418,13 +523,13 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                       <div class="modal-body">
                         <div class="row">
                           <div class="col">
-                            <img src="images/electric-footer-front.svg">
+                            <img src="images/gas-payment-clip@2x.png">
                           </div>
                         </div>
                         <div class="row pt-3 pb-2">
                           <div class="col">
                             <p>Detach your payment coupon from the bottom of the bill so you can include it with your payment. Or pay now online.
-      Try the convenience of <a href="https://www.consumersenergy.com/customer/account/billing-options" class="text-link">receiving your bill via email.</a> It’s easy to make the switch in your online profile.</p>
+Try the convenience of <a href="https://www.consumersenergy.com/customer/account/billing-options" class="text-link">receiving your bill via email.</a> It’s easy to make the switch in your online profile.</p>
                           </div>
                         </div>
                         <div class="row centered">
@@ -442,111 +547,216 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
               <div class="col-sm-10 col-md-5 bill-paper__back tab-pane fade" id="pills-backgas" role="tabpanel" aria-labelledby="pills-backelgas-tab">
                 <img src="images/gas-back-26@2x.png" />
 
-              <!--Interactive Touch Points-->
-              <button
-                class="round electric-account-info"
-                data-toggle="modal"
-                data-target="#electric-account-info">
-                <i class="fa fa-question-mark"></i>
-              </button>
-              <button
-                class="round electric-monthly-charges-details"
-                data-toggle="modal"
-                data-target="#electric-monthly-charges-details">
-                <i class="fa fa-plus"></i>
-              </button>
-              <button
-                class="round electric-rate-info"
-                data-toggle="modal"
-                data-target="#electric-rate-info">
-                <i class="fa fa-plus"></i>
-              </button>
-              <!--Modals for touch points-->
-              <div class="modal fade" id="electric-account-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Account Information</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="row">
-                        <div class="col">
-                          <img src="images/electric-account-info.svg">
-                        </div>
+                <!--Interactive Touch Points-->
+                <button
+                  class="round account-info button-wobble"
+                  data-toggle="modal"
+                  data-target="#gas-account-info">
+                  <i class="fa fa-info"></i>
+                </button>
+                <button
+                  class="round monthly-charges-details button-wobble"
+                  data-toggle="modal"
+                  data-target="#gas-monthly-charges-details">
+                  <i class="fa fa-info"></i>
+                </button>
+                <button
+                  class="round rate-info button-wobble"
+                  data-toggle="modal"
+                  data-target="#gas-rate-info">
+                  <i class="fa fa-info"></i>
+                </button>
+                <button
+                  class="round meter-info button-wobble"
+                  data-toggle="modal"
+                  data-target="#gas-meter-info">
+                  <i class="fa fa-info"></i>
+                </button>
+                <button
+                  class="round news-info button-wobble"
+                  data-toggle="modal"
+                  data-target="#gas-news-info">
+                  <i class="fa fa-info"></i>
+                </button>
+                <button
+                  class="round ways-to-pay button-wobble"
+                  data-toggle="modal"
+                  data-target="#gas-ways-to-pay">
+                  <i class="fa fa-info"></i>
+                </button>
+                <!--Modals for touch points-->
+                <div class="modal fade" id="gas-account-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Account Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
                       </div>
-                      <div class="row pt-3 pb-2">
-                        <div class="col">
-                          <p>Use this section to see how many days are in the billing period and your specific rate. More days in the billing period could result in more energy used and a higher bill, while fewer days can cut your monthly energy use and bill. Log in now to check your energy use online.</p>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col">
+                            <img class="half-size" src="images/gas-acct-info-clip@2x.png">
+                          </div>
                         </div>
-                      </div>
-                      <div class="row centered">
-                        <div class="col">
-                          <button href="#">Log In</button>
+                        <div class="row pt-3 pb-2">
+                          <div class="col">
+                            <p>Use this section to see how many days are in the billing period and your specific rate. More days in the billing period could result in more energy used and a higher bill, while fewer days can cut your monthly energy use and bill. Log in now to check your energy use online.</p>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal fade" id="electric-monthly-charges-details" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Monthly Charges Details</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="row pt-2 pb-2">
-                        <div class="col">
-                          <img src="images/electric-bill-details.svg">
-                        </div>
-                        <div class="col">
-                          <p>This is where we keep you informed about everything included in your rate. If you have questions, call us at 1-800-477-5050 or monitor your account online. Log in to get started.</p>
-                        </div>
-                      </div>
-                      <div class="row centered">
-                        <div class="col">
-                          <button href="#">Log In</button>
+                        <div class="row centered">
+                          <div class="col">
+                            <button href="#">Log In</button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="modal fade" id="electric-rate-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Rate Information</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="row">
-                        <div class="col">
-                          <img src="images/electric-rate-info.svg">
-                        </div>
+                <div class="modal fade" id="gas-monthly-charges-details" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Monthly Charges Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
                       </div>
-                      <div class="row pt-3 pb-2">
-                        <div class="col">
-                          <p>The amount of energy you use and when you use it determines your rate.</p>
+                      <div class="modal-body">
+                        <div class="row pt-2 pb-2">
+                          <div class="col">
+                            <img src="images/gas-bill-details-clip@2x.png">
+                          </div>
+                          <div class="col">
+                            <p>This is where we keep you informed about everything included in your rate. If you have questions, call us at 1-800-477-5050 or monitor your account online. Log in to get started.</p>
+                          </div>
                         </div>
-                      </div>
-                      <div class="row centered">
-                        <div class="col">
-                          <button href="/customer/account/dashboard">Pay Your Bill</button>
+                        <div class="row centered">
+                          <div class="col">
+                            <button href="#">Log In</button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+                <div class="modal fade" id="gas-rate-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Rate Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col">
+                            <img class="half-size" src="images/gas-rate-info-clip@2x.png">
+                          </div>
+                        </div>
+                        <div class="row pt-3 pb-2">
+                          <div class="col">
+                            <p>The amount of energy you use and when you use it determines your rate.</p>
+                          </div>
+                        </div>
+                        <div class="row centered">
+                          <div class="col">
+                            <button href="/customer/account/dashboard">Pay Your Bill</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="gas-meter-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Meter Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col">
+                            <img class="half-size" src="images/gas-meter-info-clip@2x.png">
+                          </div>
+                        </div>
+                        <div class="row pt-3 pb-2">
+                          <div class="col">
+                            <p>In this section, you can view details about the natural gas meter, including the meter number and the last time we read the meter.</p>
+                          </div>
+                        </div>
+                        <!-- <div class="row centered">
+                          <div class="col">
+                            <button href="/customer/account/dashboard">Pay Your Bill</button>
+                          </div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="gas-news-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">News Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col">
+                            <img src="images/gas-news-clip@2x.png">
+                          </div>
+                        </div>
+                        <div class="row pt-3 pb-2">
+                          <div class="col">
+                            <p>This section helps you stay up to date on Michigan energy trends and news.</p>
+                          </div>
+                        </div>
+                        <!-- <div class="row centered">
+                          <div class="col">
+                            <button href="/customer/account/dashboard">Pay Your Bill</button>
+                          </div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="gas-ways-to-pay" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ways to Pay</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col">
+                            <img src="images/gas-ways-to-pay-clip@2x.png">
+                          </div>
+                        </div>
+                        <div class="row pt-3 pb-2">
+                          <div class="col">
+                            <p>You can choose from a variety of ways to pay your bill.</p>
+                          </div>
+                        </div>
+                        <div class="row centered">
+                          <div class="col">
+                            <button href="#">Payment Options</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
       <!--End Gas Back of Bill-->
           </div>
@@ -574,25 +784,25 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                 <img src="images/combo-front-26@2x.png" />
                 <!--Interactive Touch Points-->
                 <button
-                  class="round total-electric-use"
+                  class="round total-use button-wobble"
                   data-toggle="modal"
-                  data-target="#total-electric-use">
-                  <i class="fa fa-plus"></i>
+                  data-target="#total-combo-use">
+                  <i class="fa fa-info"></i>
                 </button>
                 <button
-                  class="round electric-monthly-energy-summary"
+                  class="round monthly-energy-summary button-wobble"
                   data-toggle="modal"
-                  data-target="#electric-monthly-energy-summary">
-                  <i class="fa fa-plus"></i>
+                  data-target="#combo-monthly-energy-summary">
+                  <i class="fa fa-info"></i>
                 </button>
                 <button
-                  class="round electric-payment-coupon"
+                  class="round payment-coupon button-wobble"
                   data-toggle="modal"
-                  data-target="#electric-payment-coupon">
-                  <i class="fa fa-plus"></i>
+                  data-target="#combo-payment-coupon">
+                  <i class="fa fa-info"></i>
                 </button>
                 <!--Modals for touch points-->
-                <div class="modal fade" id="total-electric-use" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                <div class="modal fade" id="total-combo-use" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -604,7 +814,8 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                       <div class="modal-body">
                         <div class="row">
                           <div class="col">
-                            <img src="images/total-electric-use.png">
+                            <img src="images/total-electric-use-clip@2x.png">
+                            <img src="images/gas-total-usage-clip@2x.png">
                           </div>
                         </div>
                         <div class="row pt-2 pb-2">
@@ -627,7 +838,7 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                     </div>
                   </div>
                 </div>
-                <div class="modal fade" id="electric-monthly-energy-summary" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                <div class="modal fade" id="combo-monthly-energy-summary" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -639,7 +850,8 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                       <div class="modal-body">
                         <div class="row pt-2 pb-2">
                           <div class="col">
-                            <img src="images/electric-monthly-summary.png">
+                            <img src="images/monthly-electric-use-clip@2x.png">
+                            <img src="images/gas-monthly-usage-clip@2x.png">
                           </div>
                           <div class="col">
                             <p>Electric use is measured in kilowatt-hours and then billed according to your actual use. For more information on your specific rate, see our Energy Charges Explained page.</p>
@@ -654,7 +866,7 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                     </div>
                   </div>
                 </div>
-                <div class="modal fade" id="electric-payment-coupon" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                <div class="modal fade" id="combo-payment-coupon" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -666,13 +878,13 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
                       <div class="modal-body">
                         <div class="row">
                           <div class="col">
-                            <img src="images/electric-footer-front.svg">
+                            <img src="images/combo-payment-clip@2x.png">
                           </div>
                         </div>
                         <div class="row pt-3 pb-2">
                           <div class="col">
                             <p>Detach your payment coupon from the bottom of the bill so you can include it with your payment. Or pay now online.
-      Try the convenience of <a href="https://www.consumersenergy.com/customer/account/billing-options" class="text-link">receiving your bill via email.</a> It’s easy to make the switch in your online profile.</p>
+Try the convenience of <a href="https://www.consumersenergy.com/customer/account/billing-options" class="text-link">receiving your bill via email.</a> It’s easy to make the switch in your online profile.</p>
                           </div>
                         </div>
                         <div class="row centered">
@@ -690,111 +902,216 @@ Try the convenience of <a href="https://www.consumersenergy.com/customer/account
               <div class="col-sm-10 col-md-5 bill-paper__back tab-pane fade" id="pills-backcombined" role="tabpanel" aria-labelledby="pills-backcombined-tab">
                 <img src="images/combo-back-26@2x.png" />
 
-              <!--Interactive Touch Points-->
-              <button
-                class="round electric-account-info"
-                data-toggle="modal"
-                data-target="#electric-account-info">
-                <i class="fa fa-plus"></i>
-              </button>
-              <button
-                class="round electric-monthly-charges-details"
-                data-toggle="modal"
-                data-target="#electric-monthly-charges-details">
-                <i class="fa fa-plus"></i>
-              </button>
-              <button
-                class="round electric-rate-info"
-                data-toggle="modal"
-                data-target="#electric-rate-info">
-                <i class="fa fa-plus"></i>
-              </button>
-              <!--Modals for touch points-->
-              <div class="modal fade" id="electric-account-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Account Information</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="row">
-                        <div class="col">
-                          <img src="images/electric-account-info.svg">
-                        </div>
+                <!--Interactive Touch Points-->
+                <button
+                  class="round account-info button-wobble"
+                  data-toggle="modal"
+                  data-target="#combo-account-info">
+                  <i class="fa fa-info"></i>
+                </button>
+                <button
+                  class="round monthly-charges-details button-wobble"
+                  data-toggle="modal"
+                  data-target="#combo-monthly-charges-details">
+                  <i class="fa fa-info"></i>
+                </button>
+                <button
+                  class="round rate-info button-wobble"
+                  data-toggle="modal"
+                  data-target="#combo-rate-info">
+                  <i class="fa fa-info"></i>
+                </button>
+                <button
+                  class="round meter-info button-wobble"
+                  data-toggle="modal"
+                  data-target="#combo-meter-info">
+                  <i class="fa fa-info"></i>
+                </button>
+                <button
+                  class="round news-info button-wobble"
+                  data-toggle="modal"
+                  data-target="#combo-news-info">
+                  <i class="fa fa-info"></i>
+                </button>
+                <button
+                  class="round ways-to-pay button-wobble"
+                  data-toggle="modal"
+                  data-target="#combo-ways-to-pay">
+                  <i class="fa fa-info"></i>
+                </button>
+                <!--Modals for touch points-->
+                <div class="modal fade" id="combo-account-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Account Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
                       </div>
-                      <div class="row pt-3 pb-2">
-                        <div class="col">
-                          <p>Use this section to see how many days are in the billing period and your specific rate. More days in the billing period could result in more energy used and a higher bill, while fewer days can cut your monthly energy use and bill. Log in now to check your energy use online.</p>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col">
+                            <img class="half-size" src="images/combo-acct-info-clip@2x.png">
+                          </div>
                         </div>
-                      </div>
-                      <div class="row centered">
-                        <div class="col">
-                          <button href="#">Log In</button>
+                        <div class="row pt-3 pb-2">
+                          <div class="col">
+                            <p>Use this section to see how many days are in the billing period and your specific rate. More days in the billing period could result in more energy used and a higher bill, while fewer days can cut your monthly energy use and bill. Log in now to check your energy use online.</p>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal fade" id="electric-monthly-charges-details" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Monthly Charges Details</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="row pt-2 pb-2">
-                        <div class="col">
-                          <img src="images/electric-bill-details.svg">
-                        </div>
-                        <div class="col">
-                          <p>This is where we keep you informed about everything included in your rate. If you have questions, call us at 1-800-477-5050 or monitor your account online. Log in to get started.</p>
-                        </div>
-                      </div>
-                      <div class="row centered">
-                        <div class="col">
-                          <button href="#">Log In</button>
+                        <div class="row centered">
+                          <div class="col">
+                            <button href="#">Log In</button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="modal fade" id="electric-rate-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Rate Information</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="row">
-                        <div class="col">
-                          <img src="images/electric-rate-info.svg">
-                        </div>
+                <div class="modal fade" id="combo-monthly-charges-details" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Monthly Charges Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
                       </div>
-                      <div class="row pt-3 pb-2">
-                        <div class="col">
-                          <p>The amount of energy you use and when you use it determines your rate.</p>
+                      <div class="modal-body">
+                        <div class="row pt-2 pb-2">
+                          <div class="col">
+                            <img src="images/combo-bill-details-clip@2x.png">
+                          </div>
+                          <div class="col">
+                            <p>This is where we keep you informed about everything included in your rate. If you have questions, call us at 1-800-477-5050 or monitor your account online. Log in to get started.</p>
+                          </div>
                         </div>
-                      </div>
-                      <div class="row centered">
-                        <div class="col">
-                          <button href="/customer/account/dashboard">Pay Your Bill</button>
+                        <div class="row centered">
+                          <div class="col">
+                            <button href="#">Log In</button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+                <div class="modal fade" id="combo-rate-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Rate Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col">
+                            <img class="half-size" src="images/combo-rate-info-clip@2x.png">
+                          </div>
+                        </div>
+                        <div class="row pt-3 pb-2">
+                          <div class="col">
+                            <p>The amount of energy you use and when you use it determines your rate.</p>
+                          </div>
+                        </div>
+                        <div class="row centered">
+                          <div class="col">
+                            <button href="/customer/account/dashboard">Pay Your Bill</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="combo-meter-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Meter Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col">
+                            <img class="half-size" src="images/combo-meter-info-clip@2x.png">
+                          </div>
+                        </div>
+                        <div class="row pt-3 pb-2">
+                          <div class="col">
+                            <p>The amount of energy you use and when you use it determines your rate.</p>
+                          </div>
+                        </div>
+                        <div class="row centered">
+                          <div class="col">
+                            <button href="/customer/account/dashboard">Pay Your Bill</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="combo-news-info" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">News Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col">
+                            <img src="images/combo-news-clip@2x.png">
+                          </div>
+                        </div>
+                        <div class="row pt-3 pb-2">
+                          <div class="col">
+                            <p>This section helps you stay up to date on Michigan energy trends and news.</p>
+                          </div>
+                        </div>
+                        <!-- <div class="row centered">
+                          <div class="col">
+                            <button href="/customer/account/dashboard">Pay Your Bill</button>
+                          </div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="combo-ways-to-pay" tabindex="-1" role="dialog" aria-labelledby="modal01Label" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ways to Pay</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col">
+                            <img src="images/combo-ways-to-pay-clip@2x.png">
+                          </div>
+                        </div>
+                        <div class="row pt-3 pb-2">
+                          <div class="col">
+                            <p>You can choose from a variety of ways to pay your bill.</p>
+                          </div>
+                        </div>
+                        <div class="row centered">
+                          <div class="col">
+                            <button href="#">Payment Options</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
       <!--End combo Back of Bill-->
           </div>
