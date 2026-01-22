@@ -1,16 +1,9 @@
 // I broke this down into a few reusable functions in case functionality changes
 
 
-/*
-Main takeways include:
-- data attributes used to connect expanding panels to sections/toggle buttions
-- BEM-lite classes
-- animated using max-height since display: none; will cause "popping in" and can't be animated till in the DOM
-*/
-
 // ## Vanilla JS ##
 
-    const toggleMenuArray = document.querySelectorAll('.menu-item');
+const toggleMenuArray = document.querySelectorAll('.menu-item');
 
 
 
@@ -40,11 +33,3 @@ for (i=0; i < toggleMenuArray.length; i++ ) {
       showBill(billType);
   }
 }
-
-
-
-
-//On click event:
-//- check for the data attribute (data-bill)
-//- clear "container--active" from all .container
-//- add .container--active to the .container with the matching id to the data-bill 
