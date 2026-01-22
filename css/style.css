@@ -227,9 +227,9 @@ button:hover {
     .button-wobble {
       animation: bounce 4s infinite;
     }
-.modal {
+/* .modal {
   top: 15% !important;
-}
+} */
 
 .hide {
   display: none;
