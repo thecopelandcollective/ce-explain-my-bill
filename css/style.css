@@ -228,7 +228,7 @@ button:hover {
       animation: bounce 4s infinite;
     }
 .modal {
-  top: 25% !important;
+  top: 15% !important;
 }
 
 .hide {
