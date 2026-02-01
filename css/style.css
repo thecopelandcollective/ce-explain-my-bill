@@ -244,14 +244,34 @@ button:hover {
   top: 30%;
   left: 10px;
 }
+.total-use-combo-gas {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
 .monthly-energy-summary {
   position: absolute;
   top: 40%;
   right: 10px;
 }
+.monthly-energy-summary-combo {
+  position: absolute;
+  top: 34%;
+  right: 10px;
+}
+.monthly-energy-summary-combo-gas {
+  position: absolute;
+  top: 55%;
+  right: 10px;
+}
 .payment-coupon {
   position: absolute;
   top: 80%;
+  right: 10px;
+}
+.payment-coupon-combo {
+  position: absolute;
+  top: 90%;
   right: 10px;
 }
 .account-info {
@@ -261,7 +281,12 @@ button:hover {
 }
 .monthly-charges-details {
   position: absolute;
-  top: 20%;
+  top: 25%;
+  right: 10px;
+}
+.monthly-charges-details-combo-gas {
+  position: absolute;
+  top: 45%;
   right: 10px;
 }
 .rate-info {
@@ -274,15 +299,10 @@ button:hover {
   top: 25%;
   left: 10px;
 }
-.news-info {
-  position: absolute;
-  top: 71%;
-  left: 10px;
-}
 .ways-to-pay {
   position: absolute;
-  top: 90%;
-  left: 10px;
+  top: 87%;
+  right: 10px;
 }
 
 /*Media Queries*/
