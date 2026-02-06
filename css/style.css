@@ -57,14 +57,15 @@ p {
     text-align: center;
 }
 
-.ce-blue {
-    color: #0079C1;
+.ce-blue,
+a.nav-link {
+    color: #1565C0;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #40A2E7;
-    border: 2px solid #40A2E7;
+    background-color: #1565C0;
+    border: 2px solid #1565C0;
 }
 .nav-pills .nav-link {
     border-radius: 0 !important;
@@ -86,7 +87,7 @@ ul.tabs {
 }
 
 ul.tabs li.menu-item {
-    color: #ADADAD;
+    color: #4d4d4f;
     display: block;
     text-align: center;
     width: 33%;
@@ -95,7 +96,7 @@ ul.tabs li.menu-item {
 }
 
 ul li.menu-item svg {
-    fill: #ADADAD;
+    fill: #4d4d4f;
     pointer-events: none;
 }
 
@@ -104,27 +105,32 @@ ul li.menu-item h6 {
     pointer-events: none;
 }
 
+ul.tabs li.menu-item h6:hover,
+ul.tabs li.menu-item h6:active {
+  color: #0072bc !important;
+}
+
 ul li.menu-item:hover svg,
 ul li.menu-item:active svg {
-    fill: #2DA5EC;
+    fill: #0072bc;
 }
 
 ul li.menu-item:hover,
 ul li.menu-item:active {
-    color: #2DA5EC;
+    color: #0072bc !important;
     display: inline-block;
     text-align: center;
     width: 33%;
-    border-bottom: 2px solid #2DA5EC;
+    border-bottom: 2px solid #0072bc;
 }
 
 ul li.menu-item--selected {
-    color: #2DA5EC;
-    border-bottom: 2px solid #2DA5EC;
+    color: #0072bc !important;
+    border-bottom: 2px solid #0072bc;
 }
 
 ul li.menu-item--selected svg {
-    fill: #2DA5EC;
+    fill: #0072bc !important;
 }
 
 .bill-wrapper {
@@ -175,7 +181,7 @@ img {
 }
 
 button {
-  background: #639D36;
+  background: #188431;
   color: #ffffff;
   font-size: 16px;
   border: none;
@@ -189,9 +195,9 @@ button.round {
   justify-content: center;
   width: 48px;
   height: 48px;
-  border: 2px solid #0079C1;
+  border: 2px solid #1565C0;
   border-radius: 50%;
-  background: #0079C1;
+  background: #1565C0;
   color: #ffffff;
   box-shadow: 3px 4px 5px rgba(0,0,0,0.3);
   font-size: 24px;
@@ -206,9 +212,8 @@ button.close {
   box-shadow: none !important;
 }
 button:hover {
-    background: #9ED872;
+    background: #198b33;
     color: #ffffff;
-    box-shadow: 1px 2px 8px rgba(0,0,0,0.4);
 }
 
 .half-size {
